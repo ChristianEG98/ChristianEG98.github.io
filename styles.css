@@ -151,15 +151,34 @@ div h2{
     list-style: none;
 }
 .projects_info li{
-    margin-bottom: 3%;
-    width: auto;
+    margin-bottom: 1%;
+    width: 100%;
 }
 li img{
     width: 100%;
+    margin-top: 10px;
+}
+.projects_info p{
+    font-size: medium;
+    padding-right: 1%; padding-left: 1%;
+    padding-top: 5px;
+    color: rgb(143, 189, 214);
 }
 a{
     text-decoration: none;
+    font-size: larger;
 }
 a:hover{
     color: rgb(143, 189, 214);
+}
+/* Gallery */
+#gallery_404 img{
+    flex-direction: row;
+    width: 33%;
+    margin-top: 10px;
+}
+#gallery_a_star img{
+    flex-direction: row;
+    width: 49.7%;
+    margin-top: 10px;
 }
