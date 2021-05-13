@@ -4,6 +4,8 @@
     margin: 0;
     /* border: solid 1px red; */
     font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-weight: 300;
 }
 body{
     display: flex;
@@ -13,9 +15,10 @@ body{
     margin-top: 5%;
     margin-bottom: 2%;
     width: 85%;
-    background-color: rgb(119, 164, 190, red);
+    background-color: #375566;
     align-self: center;
 }
+/* Personal Info */
 .personal_info{
     display: flex;
     flex-direction: column;
@@ -26,13 +29,28 @@ body{
 }
 #profile_img{
     border-radius: 50%;
-    box-shadow: 0px 6px 5px #ccc;
+    box-shadow: 1px 2px 10px 0px black;
 }
 #name{
     text-align: center;
-    margin-top: 6%;
-    font-weight: 300;
+    margin-top: 8%;
 }
+.icons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10%;
+}
+.icons img{
+    width: 10%;
+}
+#a_icons{
+    filter: invert(0.9);
+}
+#a_icons:hover{
+    filter: invert(0.0);
+}
+/* Portfolio */
 .portfolio{
     display: flex;
     width: 70%;
@@ -43,48 +61,105 @@ body{
 }
 .portfolio h1{
     padding-bottom: 1%; padding-top: 1%;
-    background: linear-gradient(#D7D7CF, #DEDACE);
+    background-color: rgba(0, 0, 0, 0.35);
     border-radius: 5px;
+    font-size: 260%;
 }
-.education{
-    border-radius: 5px;
-    background-color: #DEDACE;
-    padding: 1%;
-    width: 50%;
-    margin-right: 1%;
-}
-.education li{
-    list-style: none;
-    margin-top: 4%;
-    margin-left: -15%;
-}
+/* Education & Certifications */
 .professional_info{
     display: flex;
     flex-direction: row;
     margin-bottom: 1%;
     margin-top: 1%;
 }
+div h2{
+    font-size: 180%;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(210, 210, 210, 0.3);
+}
+/* Education */
+.education{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    width: 50%;
+    margin-right: 1%;
+}
+.education ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1%;
+} 
+.education li{
+    list-style: none;
+    margin-left: -15%;
+}
+.education p{
+    margin-top: 6px;
+    font-size: large;
+}
+.education .c_web{
+    font-size: medium;
+}
+.education .d_web{
+    color: rgb(143, 189, 214);
+    font-size: medium;
+}
+/* Certifications */
 .certifications{
     border-radius: 5px;
-    background-color: #DEDACE;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 1%;
     width: 100%;
 }
+.certifications ul{
+    padding-bottom: 1%;
+}
 .certifications li{
     list-style: none;
-    margin-top: 2%;
+    margin-top: 2.5%;
     margin-left: -7%;
+    font-size: large;
+}
+.c_web{
+    color: rgb(143, 189, 214);
+    font-size: smaller;
+}
+/* Projects */
+.projects_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.projects_info h2{
+    width: 100%;
+    font-size: 165%;
+}
+.projects_info ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -4%;
+    list-style: none;
 }
 .projects_info li{
-    list-style: none;
-    margin-left: -5%;
-    margin-top: 1%;
+    margin-bottom: 3%;
+    width: auto;
 }
 li img{
     width: 100%;
 }
-.projects_info{
-    padding: 1%;
-    border-radius: 5px;
-    background: linear-gradient(#DEDACE, #E6DBC7);
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(143, 189, 214);
 }
