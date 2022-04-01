@@ -17,9 +17,18 @@
         </div>
         <div class="portfolio">
             <h1>Portfolio</h1>
-            <!-- <div class="experience">
-                <h2>Experience</h2>
-            </div> -->
+            <div class="experience_info">
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li>
+                            <!-- <img src="img/arbentia.jpg" alt="arbentia"> -->
+                            <!-- <p>Arbentia</p> -->
+                            <!-- <p class="e_text">Info</p> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="professional_info">
                 <div class="education">
                     <h2>Education</h2>
@@ -82,44 +91,113 @@
             </div>
             <div class="projects_info">
                 <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <a href="https://www.amazon.es/ChriSoft-Curiosidades-Segovia/dp/B07ZKVX57C/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=curiosidades+segovia+alexa&qid=1620774385&sr=8-1">Alexa Skill: Curiosidades Segovia</a>
-                        <p>Skill for alexa that tells you a random curiosity, from among several possible options, about the city of Segovia in Spain.</p>
+                <ul >
+                    <li class="collapse">
+                        <button class="collapsible">Alexa Skill: Curiosidades Segovia</button>
+                        <div class="content">
+                            <p>Skill for alexa that tells you a random curiosity, from among several possible options, about the city of Segovia in Spain.</p>
+                            <a id="link" href="https://www.amazon.es/ChriSoft-Curiosidades-Segovia/dp/B07ZKVX57C/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=curiosidades+segovia+alexa&qid=1620774385&sr=8-1">View on Amazon's Skills Store</a>
+                        </div>
+                        
                     </li>
-                    <li>
-                        <a href="https://actuallys-forecast.firebaseapp.com/">Actually's Forecast</a>
-                        <p>Website that shows the current weather, today's weather and the weather for the next 7 days. It allows you to manually choose the location or take it from the browser if you allow it.</p>
-                        <p>Programmed using HTML, CSS, JavaScript and OpenWeatherMap API</p>
-                        <img src="img/actuallys_forecast.png" alt="actuallys forecast">
-                    </li>
-                    <li>
-                        <a href="https://github.com/ChristianEG98/">A* Search Algorithm</a>
-                        <p>Path search algorithm with console interface. Functions: waypoints, forbidden squares and three-level obstacle squares.</p>
-                        <p>Programmed using C++</p>
-                        <div id="gallery_a_star">
-                            <img src="img/a_algorithm_1.png" alt="a star search algorithm">
-                            <img src="img/a_algorithm_2.png" alt="a star search algorithm">
+                    <li class="collapse">
+                        <button class="collapsible">Actually's Forecast</button>
+                        <div class="content">
+                            <p>Website that shows the current weather, today's weather and the weather for the next 7 days. It allows you to manually choose the location or take it from the browser if you allow it.</p>
+                            <a href="https://actuallys-forecast.firebaseapp.com/">Actually's Forecast website</a>
+                            <p>Programmed using HTML, CSS, JavaScript and OpenWeatherMap API</p>
+                            <img src="img/actuallys_forecast.png" alt="actuallys forecast">
                         </div>
                     </li>
-                    <li>
-                        <a href="https://github.com/ChristianEG98/">404</a>
-                        <p>Questions and answers website for programmers. Functions: user registration, login, search by tags or words, question and answer formulation, user profile with points according to votes and visits of these.</p>
-                        <p>Programmed using HTML, CSS, Node.js and Express.js</p>
-                        <div id="gallery_404">
-                            <img src="img/404_1.png" alt="404">
-                            <img src="img/404_2.png" alt="404"> 
-                            <img src="img/404_3.png" alt="404">
+                    <li class="collapse">
+                        <button class="collapsible">A* Search Algorithm</button>
+                        <div class="content">
+                            <p>Path search algorithm with console interface. Functions: waypoints, forbidden squares and three-level obstacle squares.</p>
+                            <a href="https://github.com/ChristianEG98/Algoritmo-A-Estrella">View A* Search Algorithm on GitHub</a>
+                            <p>Programmed using C++</p>
+                            <div>
+                                <img src="img/a_algorithm_1.png" alt="a star search algorithm">
+                                <img src="img/a_algorithm_2.png" alt="a star search algorithm">
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="https://github.com/ChristianEG98/">Parcheesi</a>
-                        <p>Parcheesi game for four players with all the functionality and a basic console interface.</p>
-                        <p>Programmed usign C++</p>
-                        <img src="img/parcheesi.png" alt="parcheesi">
+                    <li class="collapse">
+                        <button class="collapsible">ID3 Algorithm</button>
+                        <div class="content">
+                            <p>Classification algorithm that builds a decision tree by selecting a best attribute that yields maximum Information Gain or minimum Entropy.</p>
+                            <a href="https://github.com/ChristianEG98/Algoritmo-ID3">View ID3 Algorithm on GitHub</a>
+                            <p>Programmed usign C++</p>
+                            <img src="img/id3.png" alt="id3 algorithm">
+                        </div>
+                    </li>
+                    <li class="collapse">
+                        <button class="collapsible">404</button>
+                        <div class="content">
+                            <p>Questions and answers website for programmers. Functions: user registration, login, search by tags or words, question and answer formulation, user profile with points according to votes and visits of these.</p>
+                            <a href="https://github.com/ChristianEG98/Aplicaciones-Web/tree/master/Pr%C3%A1ctica%20Obligatoria/404">View 404 on GitHub</a>
+                            <p>Programmed using HTML, CSS, Node.js and Express.js</p>
+                            <div>
+                                <img src="img/404_1.png" alt="404">
+                                <img src="img/404_2.png" alt="404"> 
+                                <img src="img/404_3.png" alt="404">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="collapse">
+                        <button class="collapsible">Parcheesi</button>
+                        <div class="content">
+                            <p>Parcheesi game for four players with all the functionality and a basic console interface.</p>
+                            <a href="https://github.com/ChristianEG98/Fundamentos-de-la-Programacion-I/tree/main/Proyecto%203">View Parcheesi on GitHub</a>
+                            <p>Programmed usign C++</p>
+                            <img src="img/parcheesi.png" alt="parcheesi">
+                        </div>
+                    </li>
+                    <li class="collapse">
+                        <button class="collapsible">Matrix Puzzles</button>
+                        <div class="content">
+                            <p>Matrix puzzle game with different levels and a great variety of movements.</p>
+                            <a href="https://github.com/ChristianEG98/Fundamentos-de-la-Programacion-II/tree/main/Pr%C3%A1ctica%202">View Matrix Puzzles on GitHub</a>
+                            <p>Programmed usign C++</p>
+                            <img src="img/matrix_puzzles.png" alt="matriz puzzles">
+                        </div>
+                    </li>
+                    <li class="collapse">
+                        <button class="collapsible">Road Fighter Car</button>
+                        <div class="content">
+                            <p>2D arcade racing game with various types of difficulty, random generation of levels by seed, different types of obstacles (coins, walls, turbos, pedestrians...) and some commands (load and save game, shoot, traps...)</p>
+                            <a href="https://github.com/ChristianEG98/">View Road Fighter Car on GitHub</a>
+                            <p>Programmed usign Java</p>
+                            <img src="img/road_fighter_car.png" alt="road fighter car">
+                        </div>
+                    </li>
+                    <li class="collapse">
+                        <button class="collapsible">Traffic Car Simulator</button>
+                        <div class="content">
+                            <p>Traffic simulator developed with Swing using MVC pattern.</p>
+                            <a href="https://github.com/ChristianEG98/">View Traffic Car Simulator on GitHub</a>
+                            <p>Programmed usign Java</p>
+                            <img src="img/traffic_car_simulator.png" alt="traffic car simulator">
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <!-- Collapse project js -->
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
