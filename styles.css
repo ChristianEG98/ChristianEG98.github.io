@@ -89,12 +89,41 @@ body{
     margin-bottom: 1%;
     width: 100%;
 }
-.experience li p{
-    margin-top: 6px;
-    font-size: larger;
-}
-.experience .e_text{
+.experience .exp_text{
     font-size: medium;
+}
+.experience li{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    width: 100%;    
+}
+.company_info{
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: smaller;
+}
+.exp_info{
+    width: 70%;
+    border-left: 1px solid whitesmoke;
+    padding-left: 10px;
+}
+.exp_img{
+    width: 30px;
+}
+.comp_name{
+    font-size: x-large;
+    padding: 3px;
+}
+.exp_t{
+    color: rgb(143, 189, 214);
+    font-size: medium;
+}
+.expe_text{
+    font-size: larger;
+    padding-bottom: 5px;
 }
 /* Education & Certifications */
 .professional_info{
