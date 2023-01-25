@@ -107,7 +107,7 @@ body{
 }
 .exp_info{
     width: 70%;
-    border-left: 1px solid whitesmoke;
+    border-left: 1px solid rgba(210, 210, 210, 0.6);
     padding-left: 10px;
 }
 .exp_img{
@@ -123,7 +123,19 @@ body{
 }
 .expe_text{
     font-size: larger;
+    text-align: left;
     padding-bottom: 5px;
+    margin-left: 15px;
+}
+.expe_func{
+    display: list-item;
+    align-items: baseline;
+    align-self: auto;
+    text-align: left;
+}
+.expe_func p{
+    margin: 10px;
+    margin-left: 15px;
 }
 /* Education & Certifications */
 .professional_info{
