@@ -120,6 +120,7 @@ body{
 .exp_t{
     color: rgb(143, 189, 214);
     font-size: medium;
+    margin-right: 10px;
 }
 .expe_text{
     font-size: larger;
