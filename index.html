@@ -1,240 +1,956 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Christian's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="img/favicon.png">
-        <link rel="image_src" href="img/thumbnail.png">
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- ==================== UNICONS ==================== -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css
+        ">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Christian Esteban</title>
+    </head>
     <body>
-        <div class="personal_info">
-            <img id="profile_img" src="img/profile.jfif" alt="profile image">
-            <h1 id="name">Christian Esteban Gómez</h1>
-            <div class="icons">
-                <a href="https://github.com/ChristianEG98"><img id="a_icons" src="img/github.png" alt="github"></a>
-            </div>
-        </div>
-        <div class="portfolio">
-            <h1>Portfolio</h1>
-            <div class="experience_info">
-                <div class="experience">
-                    <h2>Experience</h2>
-                    <ul>
-                        <li>
-                            <div class="company_info">
-                                <img class="exp_img" src="img/arbentia.jpg" alt="arbentia">
-                                <p class="comp_name">Arbentia</p>
-                                <p class="exp_t">March 2022 - July 2022</p>
-                            </div>
-                            <div class="exp_info">
-                                <p class="expe_text">Microsoft Business application developer:</p>
-                                <div class="expe_func">
-                                    <p>- Creation and extension of ERPs and CRMs through Microsoft Dynamics 356 Business Central.</p>
-                                    <p>- Building business apps with Microsoft Power Apps.</p>
-                                    <p>- Create business data dashboards in Microsoft Power BI.</p>
-                                    <p>- Automate basic tasks with Microsoft Power Automate.</p>
-                                    <p>- Control of repositories and source code using Azure DevOps.</p>
-                                </div>
-                            </div>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Christian</a>
+                <div class="nav__menu" id="nav-menu"> 
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
                         </li>
                     </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
-            </div>
-            <div class="professional_info">
-                <div class="education">
-                    <h2>Education</h2>
-                    <ul>
-                        <li>
-                            <p>Degree in Software Engineering</p>
-                            <p class="c_web">Complutense University of Madrid</p>
-                        </li>
-                        <li>
-                            <p>|</p>
-                        </li>
-                        <li>
-                            <p>High School Diploma in Science</p>
-                            <p class="c_web">Claret School of Segovia</p>
-                        </li>
-                    </ul>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
                 </div>
-                <div class="certifications">
-                    <h2>Certifications and Courses</h2>
-                    <ul>
-                        <li>
-                            <p>Python for Data Science</p>
-                            <p class="c_web">IBM</p>
-                        </li>
-                        <li>
-                            <p>Data Analysis with R Programming</p>
-                            <p class="c_web">Google - Coursera</p>
-                        </li>
-                        <li>
-                            <p>Agile Project Management</p>
-                            <p class="c_web">Google - Coursera</p>
-                        </li>
-                        <li>
-                            <p>Foundations of Project Management</p>
-                            <p class="c_web">Google - Coursera</p>
-                        </li>
-                        <li>
-                            <p>Basic Principles of Big Data</p>
-                            <p class="c_web">Fundación Telefónica</p>
-                        </li>
-                        <li>
-                            <p>Development of Tizen Applications for Smart TV</p>
-                            <p class="c_web">Samsung Developers</p>
-                        </li>
-                        <li>
-                            <p>Cloud Computing</p>
-                            <p class="c_web">Google Activate</p>
-                        </li>
-                        <li>
-                            <p>Fundamentals of Digital Marketing</p>
-                            <p class="c_web">Google Activate</p>
-                        </li>
-                        <li>
-                            <p>e-Commerce</p>
-                            <p class="c_web">Google Activate</p>
-                        </li>
-                        <li>
-                            <p>Mobile Applications Developement</p>
-                            <p class="c_web">Google Activate</p>
-                        </li>
-                        <li>
-                            <p>Digitalize your business step by step with Google My Business and YouTube</p>
-                            <p class="c_web">Google Activate</p>
-                        </li>
-                        <li>
-                            <p>Introduction to Web Development: HTML & CSS</p>
-                            <p class="c_web">Google Activate</p>
-                        </li>
-                        <li>
-                            <p>Python for Beginners: Complete Python Programming</p>
-                            <p class="c_web">Udemy</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="projects_info">
-                <h2>Projects</h2>
-                <ul >
-                    <li class="collapse">
-                        <button class="collapsible">Alexa Skill: Curiosidades Segovia</button>
-                        <div class="content">
-                            <p>Skill for alexa that tells you a random curiosity, from among several possible options, about the city of Segovia in Spain.</p>
-                            <a id="link" href="https://www.amazon.es/ChriSoft-Curiosidades-Segovia/dp/B07ZKVX57C/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=curiosidades+segovia+alexa&qid=1620774385&sr=8-1">View on Amazon's Skills Store</a>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/christianestebangomez/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/ChristianEG98" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/espchrisgallery/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x='12' y='18' xlink:href="img/perfil.png"/>
+                                </g>
+                            </svg>
                         </div>
                         
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">Actually's Forecast</button>
-                        <div class="content">
-                            <p>Website that shows the current weather, today's weather and the weather for the next 7 days. It allows you to manually choose the location or take it from the browser if you allow it.</p>
-                            <a href="https://actuallys-forecast.firebaseapp.com/">Actually's Forecast website</a>
-                            <p>Programmed using HTML, CSS, JavaScript and OpenWeatherMap API</p>
-                            <img src="img/actuallys_forecast.png" alt="actuallys forecast">
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Christian</h1>
+                            <h3 class="home__subtitle">Software Engineer</h3>
+                            <p class="home__description">I am a Software Engineer with a great passion for the world of computing and new technologies.
+                                I characterize myself as a very responsible, curious person who puts all his effort into working on a task.
+                                I also like to work in a team and help everyone who needs it.</p>
+                            <a download="" href="pdf/CV.pdf" class="button button--flex">
+                                Download CV <i class="uil uil-import button__icon"></i>
+                            </a>
                         </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">Videogames Store</button>
-                        <div class="content">
-                            <p>Management software for a video game store with multilayer architecture (MVC) and the use of software design patterns.</p>
-                            <a href="https://github.com/ChristianEG98/Modelado-de-Software">View Videogames Store proyect on GitHub</a>
-                            <p>Programmed using JAVA, SQL, XAMPP and IBM Rational Software Architect Designer</p>
-                            <img src="img/videogames_store.png" alt="video games store">
-                        </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">A* Search Algorithm</button>
-                        <div class="content">
-                            <p>Path search algorithm with console interface. Functions: waypoints, forbidden squares and three-level obstacle squares.</p>
-                            <a href="https://github.com/ChristianEG98/Algoritmo-A-Estrella">View A* Search Algorithm on GitHub</a>
-                            <p>Programmed using C++</p>
-                            <div>
-                                <img src="img/a_algorithm_1.png" alt="a star search algorithm">
-                                <img src="img/a_algorithm_2.png" alt="a star search algorithm">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">ID3 Algorithm</button>
-                        <div class="content">
-                            <p>Classification algorithm that builds a decision tree by selecting a best attribute that yields maximum Information Gain or minimum Entropy.</p>
-                            <a href="https://github.com/ChristianEG98/Algoritmo-ID3">View ID3 Algorithm on GitHub</a>
-                            <p>Programmed usign C++</p>
-                            <img src="img/id3.png" alt="id3 algorithm">
-                        </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">404</button>
-                        <div class="content">
-                            <p>Questions and answers website for programmers. Functions: user registration, login, search by tags or words, question and answer formulation, user profile with points according to votes and visits of these.</p>
-                            <a href="https://github.com/ChristianEG98/Aplicaciones-Web/tree/master/Pr%C3%A1ctica%20Obligatoria/404">View 404 on GitHub</a>
-                            <p>Programmed using HTML, CSS, Node.js and Express.js</p>
-                            <div>
-                                <img src="img/404_1.png" alt="404">
-                                <img src="img/404_2.png" alt="404"> 
-                                <img src="img/404_3.png" alt="404">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">Parcheesi</button>
-                        <div class="content">
-                            <p>Parcheesi game for four players with all the functionality and a basic console interface.</p>
-                            <a href="https://github.com/ChristianEG98/Fundamentos-de-la-Programacion-I/tree/main/Proyecto%203">View Parcheesi on GitHub</a>
-                            <p>Programmed usign C++</p>
-                            <img src="img/parcheesi.png" alt="parcheesi">
-                        </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">Matrix Puzzles</button>
-                        <div class="content">
-                            <p>Matrix puzzle game with different levels and a great variety of movements.</p>
-                            <a href="https://github.com/ChristianEG98/Fundamentos-de-la-Programacion-II/tree/main/Pr%C3%A1ctica%202">View Matrix Puzzles on GitHub</a>
-                            <p>Programmed usign C++</p>
-                            <img src="img/matrix_puzzles.png" alt="matriz puzzles">
-                        </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">Road Fighter Car</button>
-                        <div class="content">
-                            <p>2D arcade racing game with various types of difficulty, random generation of levels by seed, different types of obstacles (coins, walls, turbos, pedestrians...) and some commands (load and save game, shoot, traps...)</p>
-                            <a href="https://github.com/ChristianEG98/">View Road Fighter Car on GitHub</a>
-                            <p>Programmed usign Java</p>
-                            <img src="img/road_fighter_car.png" alt="road fighter car">
-                        </div>
-                    </li>
-                    <li class="collapse">
-                        <button class="collapsible">Traffic Car Simulator</button>
-                        <div class="content">
-                            <p>Traffic simulator developed with Swing using MVC pattern.</p>
-                            <a href="https://github.com/ChristianEG98/">View Traffic Car Simulator on GitHub</a>
-                            <p>Programmed usign Java</p>
-                            <img src="img/traffic_car_simulator.png" alt="traffic car simulator">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                    </div>
+                    <div class="home__scroll">
+                        <a href="#skills" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home_scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
 
-        <!-- Collapse project js -->
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                  content.style.maxHeight = null;
-                } else {
-                  content.style.maxHeight = content.scrollHeight + "px";
-                } 
-              });
-            }
-        </script>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Programming languages</h1>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML & CSS</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__htmlcss"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript + Node JS + Express</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">C++</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__c"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__java"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">AL (Microsoft Business 365)</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__al"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-compact-disc skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Software</h1>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Office (Word, PowerPoint & Excel)</h3>
+                                        <span class="skills__number">95%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__office"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Lightroom</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__lightroom"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Odoo</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__odoo"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mongo"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__git"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">IBM Rational Software</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ibmrs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Microsoft Dynamics</h3>
+                                        <span class="skills__number">55%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__dynamics"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Microsoft Power BI + Automate + PowerApps</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__microsoftpower"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PhpMyAdmin</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__phpmyadmin"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target='#work'>
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>
+                        <div class="qualification__button button--flex" data-target='#courses'>
+                            <i class="uil uil-book qualification__icon"></i>
+                            Courses
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">High School Diploma in Science</h3>
+                                    <span class="qualification__subtitle">Segovia - Claret School</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2014 - 2016
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Degree in Software Engineering</h3>
+                                    <span class="qualification__subtitle">Madrid - Complutense University</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2017 - 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Microsoft Business Application Developer</h3>
+                                    <span class="qualification__subtitle">Arbentia - Madrid</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        March 2022 - July 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION CONTENT 3 ====================-->
+                        <div class="qualification__content" data-content id="courses">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">e-Commerce</h3>
+                                    <span class="qualification__subtitle">Google Activate</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Mobile Applications Development</h3>
+                                    <span class="qualification__subtitle">Google Activate</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Cloud Computing</h3>
+                                    <span class="qualification__subtitle">Google Activate</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Introduction to Web Development: HTML & CSS</h3>
+                                    <span class="qualification__subtitle">Google Activate</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 5 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Python for Beginners: Complete Python Programming</h3>
+                                    <span class="qualification__subtitle">Udemy</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 6 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Basic Principles of Big Data</h3>
+                                    <span class="qualification__subtitle">Fundación Telefónica</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 7 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Development of Tizen Applications for Smart TV</h3>
+                                    <span class="qualification__subtitle">Samsung Developers</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 8 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Foundations of Project Management</h3>
+                                    <span class="qualification__subtitle">Google - Coursera</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 9 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Agile Project Management</h3>
+                                    <span class="qualification__subtitle">Google - Coursera</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 10 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Data Analysis with R Programming</h3>
+                                    <span class="qualification__subtitle">Google - Coursera</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 11 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Python for Data Science</h3>
+                                    <span class="qualification__subtitle">IBM</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Knowledge</h2>
+                <span class="section__subtitle">Based on experience</span>
+
+                <div class="services__container container grid">
+                    <!--==================== SERVICES 1 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-desktop services__icon"></i>
+                            <h3 class="services__title">Software <br> Engineer</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Software <br> Engineer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Development of reliable, efficient, affordable systems to develop and maintain and that comply with quality standards.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Basic algorithmic procedures of computer technologies to design solutions to problems, analyzing suitability and complexity.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Types and structures of data most suitable for solving a problem.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Structure and architecture of computers, as well as the basic components that make them up.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Knowledge of networks and operating systems, such as Linux, Windows or MacOS.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Design, analysis and implementation of database-based applications.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Information systems, including those based on the web.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Principles, methodologies and life cycles of the software engineering.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Parallel, concurrent, distributed programming and in real time.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Management of projects, services and computer systems in all areas, leading its implementation underway and its continuous improvement and valuing its economic and social impact.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-microsoft services__icon"></i>
+                            <h3 class="services__title">Microsoft <br> Business Apps</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Microsoft <br> Business Apps</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Excellent knowledge of the Office package.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Creation and extension of ERPs and CRMs through Microsoft Dynamics 356 Business Central.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Building business apps with Microsoft Power Apps.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Create business data dashboards in Microsoft Power BI.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Automate basic tasks with Microsoft Power Automate.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Control of repositories and source code using Azure DevOps.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 3 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-process services__icon"></i>
+                            <h3 class="services__title">Project <br> Management</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Project <br> Management</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Knowledge of agile methodologies, like Scrum.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Manage the start and evolution of a project</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Analyze and monitor the risks</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Identify key project deliverables.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Break project deliverables into smaller task lists and assign them to teams.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Create and manage Kanban boards in Trello.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Specification of software requirements.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most Recent work</span>
+                
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio1.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Actually's Forecast</h3>
+                                <p class="portfolio__description">Website that shows the current weather, today's weather and the weather for the next 7 days. It allows you to manually choose the location or take it from the browser if you allow it.</p>
+                                <p class="portfolio__description">Programmed using HTML, CSS, JavaScript and OpenWeatherMap API.</p>
+                                <a href="https://actuallys-forecast.firebaseapp.com/" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio2.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Videogames Store</h3>
+                                <p class="portfolio__description">Management software for a video game store with multilayer architecture (MVC) and the use of software design patterns.</p>
+                                <p class="portfolio__description">Programmed using JAVA, SQL, XAMPP and IBM Rational Software Architect Designer.</p>
+                                <a href="https://github.com/ChristianEG98/Modelado-de-Software" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio3.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">A* Search Algorithm</h3>
+                                <p class="portfolio__description">Path search algorithm with console interface. Functions: waypoints, forbidden squares and three-level obstacle squares.</p>
+                                <p class="portfolio__description">Programmed using C++.</p>
+                                <a href="https://github.com/ChristianEG98/Algoritmo-A-Estrella" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio4.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ID3 Algorithm</h3>
+                                <p class="portfolio__description">Classification algorithm that builds a decision tree by selecting a best attribute that yields maximum Information Gain or minimum Entropy.</p>
+                                <p class="portfolio__description">Programmed usign C++.</p>
+                                <a href="https://github.com/ChristianEG98/Algoritmo-ID3" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 5 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio5.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">404</h3>
+                                <p class="portfolio__description">Questions and answers website for programmers. Functions: user registration, login, search by tags or words, question and answer formulation, user profile with points according to votes and visits of these.</p>
+                                <p class="portfolio__description">Programmed using HTML, CSS, Node.js and Express.js.</p>
+                                <a href="https://github.com/ChristianEG98/Aplicaciones-Web/tree/master/Pr%C3%A1ctica%20Obligatoria/404" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 6 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio6.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Parcheesi</h3>
+                                <p class="portfolio__description">Parcheesi game for four players with all the functionality and a basic console interface.</p>
+                                <p class="portfolio__description">Programmed usign C++.</p>
+                                <a href="https://github.com/ChristianEG98/Fundamentos-de-la-Programacion-I/tree/main/Proyecto%203" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 7 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio7.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Matrix Puzzles</h3>
+                                <p class="portfolio__description">Matrix puzzle game with different levels and a great variety of movements.</p>
+                                <p class="portfolio__description">Programmed usign C++.</p>
+                                <a href="https://github.com/ChristianEG98/Fundamentos-de-la-Programacion-II/tree/main/Pr%C3%A1ctica%202" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 8 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio8.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Road Fighter Car</h3>
+                                <p class="portfolio__description">2D arcade racing game with various types of difficulty, random generation of levels by seed, different types of obstacles (coins, walls, turbos, pedestrians...) and some commands (load and save game, shoot, traps...).</p>
+                                <p class="portfolio__description">Programmed usign Java.</p>
+                                <a href="https://github.com/ChristianEG98/Tecnologia-de-la-Programacion-I" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 9 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio9.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Traffic Car Simulator</h3>
+                                <p class="portfolio__description">Traffic simulator developed with Swing using MVC pattern.</p>
+                                <p class="portfolio__description">Programmed usign Java.</p>
+                                <a href="https://github.com/ChristianEG98/Tecnologia-de-la-Programacion-II" class="button button--flex button--small portfolio__button">
+                                    GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 10 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="img/portfolio10.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Alexa Skill: Curiosidades Segovia</h3>
+                                <p class="portfolio__description">Skill for alexa that tells you a random curiosity, from among several possible options, about the city of Segovia in Spain.</p>
+                                <a href="https://www.amazon.es/ChriSoft-Curiosidades-Segovia/dp/B07ZKVX57C/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=curiosidades+segovia+alexa&qid=1620774385&sr=8-1" class="button button--flex button--small portfolio__button">
+                                    Install
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Christian</h1>
+                        <span class="footer__subtitle">Software Engineer</span>
+                    </div>
+
+                    <!-- <ul class="footer__links"></ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="js/main.js"></script>
     </body>
 </html>
